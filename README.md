@@ -4,7 +4,35 @@
   [![Travis build status](https://travis-ci.com/uqrmaie1/admixtools.svg?branch=master)](https://travis-ci.com/uqrmaie1/admixtools)
   badges: end -->
 
-# ADMIXTOOLS 2
+# ADMIXTOOLS 2 with timepolice
+
+modified from 
+
+
+``` r
+timepolice <- function(graph){
+
+  ## add your constraints here
+  
+
+}
+``` 
+
+
+
+``` r
+satisfies_constraints = function(graph, nonzero_f4 = NULL, admix_constraints = NULL, event_order = NULL) {
+   timepolist(graph) && ## added to make sure only graphs are temporally possible
+  satisfies_zerof4(graph, nonzero_f4) &&
+    satisfies_numadmix(graph, admix_constraints) &&
+    satisfies_eventorder(graph, event_order)
+}
+```
+
+## install 
+``` r
+devtools::install_github("aalbrectsen/admixtoolsTP", dependencies = TRUE)
+```
 
 A new, lightning fast implementation of
 [*ADMIXTOOLS*](https://github.com/DReichLab/AdmixTools).

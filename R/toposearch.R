@@ -3872,7 +3872,7 @@ satisfies_numadmix = function(graph, admix_constraints) {
 #' satisfies_numadmix(random_admixturegraph(5, 2), constrain_cd)
 #' }
 satisfies_constraints = function(graph, nonzero_f4 = NULL, admix_constraints = NULL, event_order = NULL) {
-
+   timepolist(graph) && ## added to make sure only graphs are temporally possible
   satisfies_zerof4(graph, nonzero_f4) &&
     satisfies_numadmix(graph, admix_constraints) &&
     satisfies_eventorder(graph, event_order)

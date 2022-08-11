@@ -10,12 +10,21 @@ modified from
 
 
 ``` r
+source("/home/albrecht/projects/admixer2022/scripts/timepolice.R")
 timepolice <- function(graph){
 
+  igraph::as_edgelist(graph)
   ## add your constraints here
-  
+  length( res<-timepolice(df) )==0
 
 }
+timepolist <- function(graph){
+
+  ## add your constraints here
+  g <<- graph
+ stop()
+}
+
 ``` 
 
 

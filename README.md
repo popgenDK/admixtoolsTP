@@ -33,7 +33,8 @@ timepolice <- function(graph){
 
   # g <<- graph
   # stop() 
-  return(TRUE) ## no timepolice
+  
+  # return(TRUE) ## no timepolice
   
   #admixed node with whos two ancestors are ancestors of each other.   e.g. 
   # A,B -> X (X mix of A and B), A->Z -> Y->B (B has A as an ancestor)

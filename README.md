@@ -10,7 +10,7 @@ modified from https://github.com/uqrmaie1/admixtools/
 
 ## run with the two below temporal constraints
 
-examp;ele
+example that can be run on brenda
 
 ``` r
  library(admixtools,lib.loc="/home/albrecht/R/x86_64-pc-linux-gnu-library/3.6/")

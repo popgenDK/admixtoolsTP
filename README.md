@@ -54,26 +54,6 @@ timepolice <- function(graph){
 
 }
 
-timepolice <- function(graph){
-
-  # g <<- graph
-  # stop() 
-  return(TRUE) ## no timepolice
-  
-  #admixed node with whos two ancestors are ancestors of each other.   e.g. 
-  # A,B -> X (X mix of A and B), A->Z -> Y->B (B has A as an ancestor)
-  df <- as.data.frame(igraph::as_edgelist(graph) , stringsAsFactors= FALSE)
-  names(df) <- c("from","to")
-  if(length(timepoliceOne(df))>0)
-    return(FALSE)
-  
-  
-  
-  return(TRUE)
-  
-
-}
-
 
 set.seed(1)
 res = find_graphs(example_f2_blocks, numadmix = 2)

@@ -164,6 +164,6 @@ satisfies_constraints = function(graph, nonzero_f4 = NULL, admix_constraints = N
 
 ## install 
 ``` r
-devtools::install_github("aalbrechtsen/admixtoolsTP", dependencies = TRUE)
+devtools::install_github("popgenDK/admixtoolsTP", dependencies = TRUE)
 ```
 

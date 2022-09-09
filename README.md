@@ -20,6 +20,9 @@ res = find_graphs(example_f2_blocks, numadmix = 2)
 
 
 ```
+<p align="center" width="100%">
+    <img width="100%" src="https://raw.githubusercontent.com/popgenDK/admixtoolsTP/master/tp.png">
+</p>
 
 
 ## modify the time police
@@ -61,6 +64,9 @@ res = find_graphs(example_f2_blocks, numadmix = 2)
 
 
 ``` 
+
+
+
 ### Time police functions
 (/home/albrecht/tmp/timepoliceGit.R)
 ``` r
